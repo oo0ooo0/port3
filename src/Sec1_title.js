@@ -15,7 +15,6 @@ function Sec1_title() {
   
     }, []);
   return (
-    // in js remove className show
     <section id="section1" ref={ref}>
     <h2 className="ir_su">section1_title</h2>
     <div className="container">
