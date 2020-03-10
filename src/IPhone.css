@@ -1,0 +1,20 @@
+
+/* sec2 */
+.sec2 .phone-wrap                    {position: relative; overflow: hidden;}
+.sec2 .phone-wrap .phone              {float: left; position: relative; width: 32.6%; margin-right: 1%; }
+.sec2 .phone-wrap .phone:last-child   {margin-right: 0%; }
+.sec2 .phone-wrap > div img          {width: 100%;}
+.sec2 .phone-wrap > div .box         {position: absolute; left: 1.6vw; top: 5.8vw; width: 22.7vw; height: 40.2vw; border-radius: .1vw; background-color: #0a0a0a;}
+
+/* .sec2>state-bar */
+.state-bar              {position: absolute; overflow: hidden; height: 2.7vw; width: 100%; margin-right: .3.9vw; padding: 1vw .4vw 0 .5vw; color: #EEE3C1; font-size: .8vw;  box-sizing: border-box;
+                        z-index: 999; display: flex; align-self: flex-end; }
+.state-bar > div        {float: left; margin-right: .5vw;  display: flex; align-self: center;}
+.state-bar .connection  {font-size: .6vw; }
+.state-bar .wife        {font-size: .8vw;  margin-top: -.1vw;}
+.state-bar .clock-box   {font-size: .9vw; line-height: 0.9vw; margin: -.1vw 4.2vw 0vw 4.6vw;}
+.state-bar .lock        {font-size: .8vw; margin-top: -.1vw; }
+.state-bar .location    {font-size: .8vw; margin-top: -.1vw;}
+.state-bar .bluetooth   {font-size: 1vw; margin-top: -.2vw;}
+.state-bar .battery     {font-size: 1.3vw; margin-top: 0vw; margin-right: 0;}
+

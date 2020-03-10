@@ -1,5 +1,6 @@
 import React, { useEffect, useCallback, useRef, useState } from 'react';
 import './Sec2_iphone.css';
+import './IPhone.css';
 import IPhone from './IPhone';
 
 
