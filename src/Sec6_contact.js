@@ -5,20 +5,20 @@ function Sec6_contact() {
    
   return (
     <section id="section6">
-    <h2 class="ir_su"> section6_contact</h2>
-    <div class="container">
-        <div class="row">
-            <div class="sec6">
-                <div class="line">
-                    <div class="miniProfile">
-                        <p class="name">
+    <h2 className="ir_su"> section6_contact</h2>
+    <div className="container">
+        <div className="row">
+            <div className="sec6">
+                <div className="line">
+                    <div className="miniProfile">
+                        <p className="name">
                             KWON JAMIN
                         </p>
-                         <p class="email">
+                         <p className="email">
                             kkjajjja@gmail.com
                         </p>
                      </div>
-                    <div class="footer">
+                    <div className="footer">
                         <p>Copyrightⓒ2020.권자민.All rights reserved.</p>
                         <p> This site is intended as a personal portfolio site, not for commercial use.  </p>                    
                         </div>
