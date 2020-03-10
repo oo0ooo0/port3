@@ -2,12 +2,6 @@ import React, { useEffect, useCallback, useRef, useState } from 'react';
 import './MockupIPhone.css';
 
 
-function Picture(props) {
-    return (
-        <h2>{props.name}</h2>
-    )
-}
-
 function MockupIPhone(props) {
    const [currentTime, setTime] = useState('00:00')
 
@@ -29,7 +23,7 @@ function MockupIPhone(props) {
 
   return (
     <div className="phone">
-        <img src ="https://port03.now.sh/img/iphone.svg" alt="iphone_Image" />
+        <img src ="img/iphone.svg" alt="iphone_Image" />
             <div className="box">
                 <div className="state-bar">
                     <div className="connection"> 
