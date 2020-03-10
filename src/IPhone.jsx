@@ -30,34 +30,36 @@ function IPhone(props) {
   return (
     <div className="phone">
         <img src ="https://port03.now.sh/iphone.svg" alt="iphone_Image" />
-            <div className="state-bar">
-                <div className="connection"> 
-                    <i className="fas fa-circle"></i> 
-                    <i className="fas fa-circle"></i> 
-                    <i className="fas fa-circle"></i> 
-                    <i className="far fa-circle"></i> 
-                    <i className="far fa-circle"></i> 
-                </div>
-                <div className="wifi">
-                    <i className="fas fa-wifi wifi"></i>
-                </div>
-                <div className="clock-box">
-                    <span id="clock1">{currentTime}</span>
-                </div>
-                <div className="lock">
-                    <i className="fas fa-unlock"></i>
-                </div>
-                <div className="location">
-                    <i className="fas fa-location-arrow"></i>
+            <div className="box">
+                <div className="state-bar">
+                    <div className="connection"> 
+                        <i className="fas fa-circle"></i> 
+                        <i className="fas fa-circle"></i> 
+                        <i className="fas fa-circle"></i> 
+                        <i className="far fa-circle"></i> 
+                        <i className="far fa-circle"></i> 
                     </div>
-                <div className="bluetooth">
-                    <i className="fab fa-bluetooth-b"></i>
+                    <div className="wife">
+                        <i className="fas fa-wifi wifi"></i>
+                    </div>
+                    <div className="clock-box">
+                        <span id="clock1">{currentTime}</span>
+                    </div>
+                    <div className="lock">
+                        <i className="fas fa-unlock"></i>
+                    </div>
+                    <div className="location">
+                        <i className="fas fa-location-arrow"></i>
+                        </div>
+                    <div className="bluetooth">
+                        <i className="fab fa-bluetooth-b"></i>
+                    </div>
+                    <div className="battery">
+                        <i className="fas fa-battery-three-quarters"></i>
+                    </div>
                 </div>
-                <div className="battery">
-                    <i className="fas fa-battery-three-quarters"></i>
-                </div>
+                {props.children}
             </div>
-        {props.children}
     </div>
   );
 }
