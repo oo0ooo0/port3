@@ -1,0 +1,10 @@
+/* sec6: contact */
+.sec6 {position: relative; color: #EEE3C1; display: flex; width: 100%; height: 100vh; justify-content: center; flex-direction: column;  text-align: center; }
+.sec6 .line {position: absolute; transform: translate(-50%,-50%); top: 50%; left: 50%; padding: 5vh; width: 80%; }
+.sec6 .miniProfile {height: auto; }
+.sec6 .miniProfile .title {font-size:3.2vw; font-weight:800; line-height: 1; margin-bottom:2vw;  }
+.sec6 .miniProfile .name {font-size:2.8vw; margin-bottom:2vw; line-height: 1;}
+.sec6 .miniProfile .email {font-size:2.8vw; margin-bottom:2vw; line-height: 1.2;}
+.sec6 .footer {text-align:center; padding-top:0vh; font-size:1vw; font-weight:300;}
+.sec6 .footer p {margin-bottom:1vw;}
+
