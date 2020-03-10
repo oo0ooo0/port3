@@ -7,7 +7,7 @@
 .sec2 .phone-wrap > div .box         {position: absolute; left: 1.6vw; top: 5.8vw; width: 22.7vw; height: 40.2vw; border-radius: .1vw; background-color: #0a0a0a;}
 
 /* .sec2>state-bar */
-.state-bar              {position: absolute; overflow: hidden; height: 2.7vw; width: 100%; margin-right: .3.9vw; padding: 1vw .4vw 0 .5vw; color: #EEE3C1; font-size: .8vw;  box-sizing: border-box;
+.state-bar              {position: absolute; overflow: hidden; height: 2.7vw; width: 100%; margin-right: .3.9vw; padding: 0vw .4vw 0 .5vw; color: #EEE3C1; font-size: .8vw;  box-sizing: border-box;
                         z-index: 999; display: flex; align-self: flex-end; }
 .state-bar > div        {float: left; margin-right: .5vw;  display: flex; align-self: center;}
 .state-bar .connection  {font-size: .6vw; }

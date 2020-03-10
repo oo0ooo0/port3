@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useRef, useState } from 'react';
-import './Sec2_iphone.css';
+import './MockupIPhone.css';
 
 
 function Picture(props) {
@@ -8,7 +8,7 @@ function Picture(props) {
     )
 }
 
-function IPhone(props) {
+function MockupIPhone(props) {
    const [currentTime, setTime] = useState('00:00')
 
    const computeCurrentTime = () => {
@@ -29,7 +29,7 @@ function IPhone(props) {
 
   return (
     <div className="phone">
-        <img src ="https://port03.now.sh/iphone.svg" alt="iphone_Image" />
+        <img src ="https://port03.now.sh/img/iphone.svg" alt="iphone_Image" />
             <div className="box">
                 <div className="state-bar">
                     <div className="connection"> 
@@ -64,4 +64,4 @@ function IPhone(props) {
   );
 }
 
-export default IPhone;
+export default MockupIPhone;
