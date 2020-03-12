@@ -2,14 +2,7 @@
 /* sec2 */
 .sec2                                {padding: 5vw 0vw;}
 
-/* .sec2>ani1_chat layout */
-.box1 {
-        overflow: hidden;
-        position: relative; background: linear-gradient(135deg, #044f48, #2a7561);
-        width: 100%; height: 100%; max-height: 50vw;
-        font-size: 2vw; line-height: 1.3;
-        background-size: cover;
-  }
+
 /* .sec2>ani1_chat chat */
 .chat {
   position: absolute;
@@ -238,4 +231,307 @@
     to {
                transform: translateY(-1vw);
     }
+  }
+
+
+
+
+
+
+
+
+
+
+  /* .sec2>ani2_.menu */
+ .menuBox {overflow: hidden; position: relative; width: 100%; height: 100%; 
+      background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
+    } 
+    
+    .menuTrigger, .closeTrigger {
+      position: absolute;
+      top: 5.2vw;
+      right: 2vw;
+      display: block;
+      width: 4.2vw;
+      height: 4.2vw;
+      cursor: pointer;
+      z-index: 30;
+    }
+    .menuTrigger:hover .menuTriggerBar:before, .closeTrigger:hover .menuTriggerBar:before {width: 100%;}
+    .menuTrigger:hover .closeTriggerBar:before, .closeTrigger:hover .closeTriggerBar:before {width: 100%;}
+    .closeTrigger { top: 6vw; z-index: 30;}
+    
+    .menuTriggerBar {
+      display: block;
+      width: 100%;
+      height: .4vw;
+      background-color: #EEE3C1;
+      margin-bottom: .6vw;
+      transform: rotate(-45deg);
+      position: relative;
+    }
+    .menuTriggerBar:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 0%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    }
+    .menuTriggerBar.top {
+      width: 50%;
+    }
+    .menuTriggerBar.middle:before {
+      left: auto;
+      right: 0;
+    }
+    .menuTriggerBar.bottom {
+      width: 50%;
+      margin-left: 50%;
+    }
+    
+    .closeTriggerBar { display: block; width: 100%; height: .4vw; background-color: #EEE3C1; position: relative; }
+    .closeTriggerBar:before {
+      content: "";
+      position: absolute; top: 0; left: 0; display: block; width: 0%; height: 100%;
+      transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); background-color: rgba(0, 0, 0, 0.2); 
+    }
+    .closeTriggerBar.left {
+      transform: rotate(-45deg);
+    }
+    .closeTriggerBar.right {
+      transform:  rotate(45deg);
+      top: -.4vw;
+    }
+    
+    .logo {
+       display: block;
+      width: 9vw;
+      height: 6.4vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 10;
+    }
+    
+    .logo .logoInfo{
+      font-size: 1.5vw;
+      margin-bottom: 1vw;
+      white-space: nowrap;
+      text-decoration: underline;
+      background-color: rgba(0,0,0,0.1);
+    }
+    .logo span {
+      display: block;
+      text-align: center;
+      line-height: 6vw;
+      font-size: 7vw;
+      color: #EEE3C1;
+    }
+    
+    
+    
+    .innerContainer, .menuContainer {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    
+    .innerContainer {
+      z-index: 20;
+    }
+    
+    .menuContainer {
+      display: flex;
+      align-items: center;
+    }
+    
+    .menu {
+      display: block;
+      width: 100%;
+      padding: 20%;
+    }
+    .menu li {
+      text-align: left;
+      display: block;
+      padding: .5vw 0;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #EEE3C1;
+      display: inline-block;
+      position: relative;
+      font-size: 1.5vw;
+    }
+    .menu a:hover:before {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .menu a:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -.2vw;
+      width: 1.8vw;
+      height: .3vw;
+      opacity: 0;
+      background-color: #EEE3C1;
+      transform: translateX(10vw) ;
+      transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    }
+    
+   
+
+
+
+
+
+/* .sec2>ani3_.calculator */
+.calculator {
+      display: grid; width: 100%; height: 100%; padding: 8vw 1vw 0 1vw; background-color: #0a0a0a; box-sizing: border-box;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 5vw;
+      grid-auto-rows: 5vw;
+      grid-gap: 1vw;
+    }
+    .calculator span {padding-top: 1vw; font: lighter 3vw/1 'Public+Sans'; color: #EEE3C1; cursor: pointer; background-color: #3d3b41;  border-radius: 10%;
+      display: flex; 
+      justify-content: center; align-items: center;
+      transition: opacity 0.25s ease;
+    }
+    .calculator span:active {opacity: 0.8;}
+    .calculator span:not(.result) {user-select: none;}
+    .calculator .result {padding-right: 2vw; font-size: 4.5vw; justify-content: flex-end; background-color: #0a0a0a; 
+      grid-column: 1 / 4; 
+      overflow: hidden;  white-space: nowrap;
+    }
+    .calculator .zero {grid-column: 1 / 3;}
+    .calculator .operation {background-color: #ca081279;}
+    .calculator .reset {background-color: #b3b3bb;}
+  
+
+
+
+
+    /*
+ *
+ * CSS CONTENTS:
+ *
+ * 01. Web Font
+ * 02. Type Selector Reset
+ * 03. Loding
+ * 04. Calculator
+ * 05. Darkmode switch
+ * 06. Darkmode
+ * 07. Explanation
+ *
+ */
+
+/* Web Font Load */
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+
+
+.Main {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: auto;
+    display: flex;
+    height: 100%;
+}
+
+/* Loding */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 300;
+}
+
+/* Calculator */
+.calculator-area {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 600px;
+}
+
+.result {
+    margin-top: 90px;
+    width: 100%;
+    height: 90px;
+}
+
+.calculator-body {
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgb(35, 43, 63);
+}
+
+.result p {
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+    width: 100%;
+    color: rgb(158, 161, 165);
+    text-overflow: ellipsis;
+    text-align: right;
+    font-size: 50px;
+   
+
+}
+
+.button-area {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 1vw;
+     background-color: rgb(48, 57, 79);
+}
+
+.calcualatorBtn {
+    margin: .5vw;
+    height: 4vw;
+    width: 4vw;
+    border: none;
+    border-radius: 4vw;
+    outline: none;
+    background-color: #00ff0000;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(153, 167, 160);
+
+}
+
+button:hover {
+    box-shadow: 0.1px 0.1px 2px #2e2e2e;
+}
+
+button:active {
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.symbol {
+    background-color: rgb(35, 43, 63);
+    color: #48d392;
+}
+
+#same {
+
+    background-color: #48d392;
+    color: rgb(35, 43, 63);
   }

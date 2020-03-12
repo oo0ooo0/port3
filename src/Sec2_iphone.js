@@ -2,6 +2,8 @@ import React, { useEffect, useCallback, useRef, useState } from 'react';
 import MockupIPhone from './MockupIPhone';
 import './Sec2_iphone.css';
 import './MockupIPhone.css';
+import MenuBox from './components/MenuBox';
+import Calculator from './components/Calculator';
 
 
 function Sec2_iphone() {
@@ -17,7 +19,6 @@ function Sec2_iphone() {
             <div className="sec2">
                 <div className="phone-wrap">
                 <MockupIPhone>
-                    <div className="box1">
                         <div className="chat">
                         <div className="chat-title">
                             <h3 className="accountName">Carlos</h3>
@@ -51,24 +52,26 @@ function Sec2_iphone() {
 
                         </div>
                         <div className="bg"></div>
-                    </div>
                 </MockupIPhone>
 
                 <MockupIPhone>
-                {/* <div className="box1"> */}
-
+                   <MenuBox/>
                 </MockupIPhone>
                 
 
-                <MockupIPhone/>
-                  
+                <MockupIPhone>
+                <Calculator/>
+
+                </MockupIPhone>                  
                             
 
                 </div>{/* phone-wrap */}
             </div>{/* sec2 */}
         </div>{/* row */}
     </div> {/* container */}
+
 </section>
+
   );
 }
 
