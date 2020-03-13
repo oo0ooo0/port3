@@ -18,8 +18,8 @@ class KeyPadComponent extends Component {
         return (
             <div className="button-area">
 
-                <button className="symbol calcualatorBtn" name="" onClick={e => this.props.onClick(e.target.name)}> </button>
-                <button className="symbol calcualatorBtn" name="" onClick={e => this.props.onClick(e.target.name)}> </button>
+                <button className="calcualatorBtn" name="" onClick={e => this.props.onClick(e.target.name)}> </button>
+                <button className="calcualatorBtn" name="" onClick={e => this.props.onClick(e.target.name)}> </button>
                 <button className="symbol calcualatorBtn" name="C" onClick={e => this.props.onClick(e.target.name)}>C</button>
                 <button className="calcualatorBtn" id="same" name="=" onClick={e => this.props.onClick(e.target.name)}>=</button>
                 <br/>
@@ -115,7 +115,7 @@ class CalculationComponent extends Component {
 
     render() {
         return (
-        <div>
+        <div className="Main">
             <ResultComponent result={this.state.result}/>
             <KeyPadComponent onClick={this.onClick}/>
             </div>
