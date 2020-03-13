@@ -6,7 +6,7 @@ function MenuBox() {
   
   const handleShow = () => {
     setShow(!isShow);
-    console.log(isShow);
+    // console.log(isShow);
   };
 
   const w = window.innerWidth;
@@ -28,7 +28,7 @@ document.addEventListener('mousemove', e => {
   setStyle('--grad-start', gradStart);
   setStyle('--grad-end', gradEnd);
  }); 
- 
+
 
   return (
     <div className="menuBox">
