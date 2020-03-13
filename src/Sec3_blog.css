@@ -1,20 +1,28 @@
 /* sec3 */
-.sec3 .intro {position: relative;
-    color: #EEE3C1;
-    font-size: 1.4vw;
-    letter-spacing: 0;
-    line-height: 1.8vw;
-    padding: 4vw 0;
-    font-family: 'Orbitron', sans-serif; font-weight: 900; 
-    padding-left: 15vw;
-    text-align: justify;
-    text-transform: uppercase;
+.sec3 .intro {
+  position: relative;
+  color: #eee3c1;
+  font-size: 1.4vw;
+  letter-spacing: 0;
+  line-height: 1.8vw;
+  padding: 4vw 0;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  padding-left: 15vw;
+  text-align: justify;
+  text-transform: uppercase;
 }
 .sec3 a {
-    font-size: 2vw; line-height: 2vw; color: var(--special-color);
-    font-family: 'Orbitron', sans-serif; font-weight: 900; 
-    position: absolute; left: 0; bottom: 4vw;
-    transition: color 0.2s ease;
+  font-size: 2vw;
+  line-height: 2vw;
+  color: var(--special-color);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  bottom: 4vw;
+  transition: color 0.2s ease;
 }
-.sec3 a:hover { color: #fff;
+.sec3 a:hover {
+  color: #fff;
 }
