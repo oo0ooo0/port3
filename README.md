@@ -8,4 +8,4 @@ I maked [port01] (https://port02.now.sh/) with React.
  
 
 ### [vercel] (https://vercel.com/) Use domain.
- When pushed, it is automatically deployed to https://port02.now.sh/.
+ When pushed, it is automatically deployed to https://port02.oo0ooo0.vercel.app/.
